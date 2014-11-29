@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mice</title>
+    <style>
+        canvas, #background {
+            position: absolute;
+            z-index: 0;
+        }
+
+        #animationContainer {
+            position: absolute;
+            z-index: 1;
+        }
+
+        #scoreContainer{
+            position: relative;
+        }
+    </style>
+    <script src="libs/jquery-2.1.1.js"></script>
+    <script src="libs/kinetic-v5.1.0.min.js"></script>
+    <script src="libs/raphael-min.js"></script>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="top-scores">
+        <button onclick="location.reload()">New Game</button>
+    </div>
+    <div id="animationContainer"></div>
+    <!--<canvas id="the-canvas" width="800" height="600"></canvas>-->
+    <div id="scoreContainer">Score: 0, Level: 1</div>
+    
+    <script src="scripts/background.js"></script>
+    <script src="scripts/mice.js"></script>
+</body>
+</html>
